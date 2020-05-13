@@ -21,4 +21,15 @@ Po wejściu w link https://dilejt.github.io pokaże się przygotowana witryna in
 - dla szerokości okna ok.1920px pokazuje się obrazek kapelusza w sekcji informacyjnej na dole strony gdzie po kliknięciu w niego uruchamia się animacja zanikania elementu i w efekcie końcowym pojawienia się na górze strony,
 - responsywnością oczywiście zarówno tekstu, obrazków jak i wszystkich innych komponentów na całej stronie
 
+W folderze js znajdują się pliki:
+- animations.js z:
+- - animowanym scrollowaniem strony po naciśnięciu odnośnika w nawigacji,
+- - obracaniem róży wiatrów,
+- - obsługą wskaźników pokazujących informacje w sposób animowany,
+- - rozmazywaniem tła sekcji informacyjnej po zjechaniu scrollem do miejsca tej sekcji
+- forms.js z:
+- - walidacją danych formularza
+- controllers.js z:
+- - obsługą galerii za pomocą angulara
+
 Miłego oglądania :)
