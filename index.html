@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>TigerClaw</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/285daa856a.js" crossorigin="anonymous"></script>
+  </head>
+  <body data-ng-app="TigerClawApp">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto text-left">
+          <li class="nav-item active">
+            <a class="nav-link" href="#jungle">Mapa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#traveler">Przewodnicy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mx-lg order-0">
+        <a class="navbar-brand mx-auto" href="#">
+          <img src="img/logo.png" height="100" class="d-inline-block align-top" alt="TigerClaw">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto text-left">
+          <li class="nav-item">
+            <a class="nav-link" href="#formContainer">Formularz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <img src="img/texthead.png" alt="powitanie">
+      <div id="headerText">Podołasz wyzwaniu?</div>
+      <div id="rope"></div>
+      <div id="compass"></div>
+    </header>
+    <section id="jungle">
+      <img src="img/point.png" id="point1" class="points" alt="punkt1">
+      <img src="img/point.png" id="point2" class="points" alt="punkt2">
+      <img src="img/point.png" id="point3" class="points" alt="punkt3">
+      <img src="img/point.png" id="point4" class="points" alt="punkt4">
+      <img src="img/point.png" id="point5" class="points" alt="punkt5">
+      <img src="img/path1.png" id="path1" class="paths" alt="sciezka1">
+      <div id="info1" class="infoJungle">
+        <img class="img-fluid" src="img/animal1.png" alt="slon">
+        <div class="textJungle">Jeden z trzech żyjących gatunków rodziny słoniowatych. Słoń indyjski jest mieszkańcem dżungli i przestrzeni trawiastych. Słonie żyją w stadach rodzinnych, liczących 15–30 osobników, którym przewodzi stara samica.</div>
+      </div>
+      <img src="img/path2.png" id="path2" class="paths" alt="sciezka2">
+      <div id="info2" class="infoJungle">
+        <img class="img-fluid" src="img/animal2.png" alt="tygrys">
+        <div class="textJungle">Najliczniejszy podgatunek tygrysa azjatyckiego, ssaka z rodziny kotowatych. Tygrys bengalski występuje na ciepłych, wilgotnych lasach, łąkach i lasach namorzynowych. Tygrys bengalski jest narodowym zwierzęciem Bangladeszu. Gatunek zagrożony wyginięciem.</div>
+      </div>
+      <img src="img/path3.png" id="path3" class="paths" alt="sciezka3">
+      <div id="info3" class="infoJungle">
+        <img class="img-fluid" src="img/animal3.png" alt="lew">
+        <div class="textJungle">Podgatunek lwa afrykańskiego. Jest on narodowym symbolem Indii. Obecnie osobniki występujące na wolności żyją tylko w Rezerwacie Gir Forest na skrajnym zachodzie Indii.</div>
+      </div>
+      <img src="img/path4.png" id="path4" class="paths" alt="sciezka4">
+      <div id="info4" class="infoJungle">
+        <img class="img-fluid" src="img/animal4.png" alt="waran">
+        <div class="textJungle">Gatunek gada z rodziny waranów nazywany smokiem z Komodo. Jest największym przedstawicielem jaszczurek i osiąga do 3m długości. Zamieszkuje tereny z roślinnością krzewiastą i zadrzewione. Samice potrafią rozmnażać się partenogenetycznie w przypadku braku samca. Ich pokarmem jest mięso, są także kanibalami.</div>
+      </div>
+      <img src="img/path5.png" id="path5" class="paths" alt="sciezka5">
+      <div id="info5" class="infoJungle">
+        <img class="img-fluid" src="img/animal5.png" alt="szerszen">
+        <div class="textJungle">Gatunek owada z rodziny osowatych, największy szerszeń świata. Jak podają media, jego użądlenia zabijają co roku w samej Japonii około 40 osób. Roje liczą do kilkuset osobników i mieszkają w gniazdach, które mogą osiągnąć średnicę 1 m.</div>
+      </div>
+    </section>
+    <section id="traveler">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="textTraveler1">Nasi przewodnicy z krwi i kości</div><br/>
+            <div id="textTraveler2">To oni mogą zabrać was na wyprawę z której miejmy nadzieję wrócicie żywi.</div>
+          </div>
+          <div class="col-sm-6"></div>
+        </div>
+        <p></p>
+        <div class="form-row" data-ng-controller="GalleryListCtrl">
+          <div class="col-md-4">
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Sortuj:</label>
+              <div class="col-sm-10">
+                <select data-ng-model="orderProp" class="form-control" data-ng-options="sort as sort.label for sort in sortList">
+                  <option value="title">Alfabetycznie</option>
+                  <option value="description">Chronologicznie</option>
+                </select>
+                <p></p>
+                <p data-ng-if="orderProp">Galerie ułożone: <strong>{{orderProp.label}}</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4"></div>
+          <div class="col-md-4">
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Szukaj:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" data-ng-model="query">
+                <p></p>
+                <p data-ng-if="!query">Ilość wszystkich elementów: <strong>{{galleries.length}}</strong></p>
+                <p data-ng-if="query">Wyniki wyszukiwania dla: <strong>{{query}}</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-ng-repeat="gallery in galleries | filter:query | orderBy: orderProp.value">
+            <img class="w-50 rounded mx-auto d-block"  ng-src="{{gallery.Url}}" alt="{{gallery.title}}">
+            <h3 class="text-center">{{gallery.title}}</h3>
+            <div class="text-center">
+              <span class="attr">Opinie: </span>{{gallery.feedback}}
+              <span class="attr">Ocena: </span>{{gallery.rating}}
+              <p>{{gallery.description}}</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="formContainer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 text-center">
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselIndicators" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-50 mx-auto d-block rounded" src="./img/place1.jpg" alt="Pierwszy slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-50 mx-auto d-block rounded" src="./img/place2.jpg" alt="Drugi slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-50 mx-auto d-block rounded" src="./img/place3.jpg" alt="Trzeci slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-50 mx-auto d-block rounded" src="./img/place4.jpg" alt="Czwarty slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-50 mx-auto d-block rounded" src="./img/place5.jpg" alt="Piaty slide">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="tiger" class="col-md-6">
+            <div id="formText">Udaj się w głąb bezkresnej dżungli na prawdziwą przygodę z PAZUREM!</div>
+          </div>
+          <div class="col-md-6 form jumbotron mx-auto">
+            <form method="post" action="index.html#kontakt" onsubmit="return checkForm()" > 
+              <label>Formularz kontaktowy</label>  
+              <div class="form-group">
+                <label class="sr-only" for="contactName">Imię</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="contactName" placeholder="Imię" onchange="checkName()">
+                <div id="errorName" class="form-text">Uzupełnij imię</div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="contactSName">Nazwisko</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="contactSName" placeholder="Nazwisko" onchange="checkSName()">
+                <div id="errorSName" class="form-text">Uzupełnij nazwisko</div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="contactEmail">E-mail</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="contactEmail" placeholder="E-mail" onchange="checkEmail()">
+                <div id="errorEmail" class="form-text">Uzupełnij e-mail</div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="contactTextarea">Informacja</label>
+                <textarea maxlength="250" class="form-control mb-2 mr-sm-2" id="contactTextarea" placeholder="Informacja" onchange="checkTextarea()"></textarea>
+                <div id="errorTextarea" class="form-text">Napisz coś o sobie. (Maksymalnie 250 znaków)</div>
+              </div>
+              <button type="submit" class="btn btn-primary" value="Wyślij">Wyślij</button>     
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="rope2"></div>
+    <section id="about">
+      <div id="aboutBlur">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 aboutBox rounded text-center">
+              <i class="fa-4x fas fa-hat-cowboy"></i>
+              <div>
+              Jesteśmy firmą turystyczną organizującą wyprawy z najbardziej doświadczonymi przewodnikami w głąb Indyjskich dżungli. Oferujemy niezapomnianą dawkę wrażeń nawet dla najbardziej wymagających ludzi na świecie.
+              </div>
+            </div>
+            <div class="col-md-4 aboutBox rounded text-center">
+              <i class="fa-4x fas fa-hiking"></i>
+              <div>
+                Najbliższe zapisy odwołane z powodu wirusa !
+              </div>
+            </div>
+            <div class="col-md-4 aboutBox rounded text-center">
+              <i class="fa-4x fas fa-phone"></i>
+              <div>
+                Kontakt telefoniczny: <br/>010 535 512 <br/><br/>Biuro: Polska <br/>Warszawa 00-001 <br/>ul. Tropikalna 15c <br/>8 a.m - 4 p.m<br/><br/>E-mail: <br/>biuro@TigerClaw.pl</div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <img id="hat" src="img/hat.png" alt="kapelusz">
+    </section>
+    <footer class="footer">
+      <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Polityka prywatności</button>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalCenterTitle">Polityka prywatności</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h1 class="text-center">Zgoda jest dobrowolna i możesz ją w dowolnym momencie wycofać w ustawieniach zaawansowanych.</h1>
+              <p>Ponadto masz prawo żądania dostępu, sprostowania, usunięcia lub ograniczenia przetwarzania danych. W polityce prywatności znajdziesz informacje jak zakomunikować nam Twoją wolę skorzystania z tych praw.</p>
+              <p>Szczegółowe informacje na temat przetwarzania Twoich danych znajdują się w polityce prywatności.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+              <button type="button" class="btn btn-primary">Zapisz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/forms.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+  </body>
+</html>
