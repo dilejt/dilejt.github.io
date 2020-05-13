@@ -20,3 +20,5 @@ Po wejściu w link https://dilejt.github.io pokaże się przygotowana witryna in
 - stopką z polityką prywatności,
 - dla szerokości okna ok.1920px pokazuje się obrazek kapelusza w sekcji informacyjnej na dole strony gdzie po kliknięciu w niego uruchamia się animacja zanikania elementu i w efekcie końcowym pojawienia się na górze strony,
 - responsywnością oczywiście zarówno tekstu, obrazków jak i wszystkich innych komponentów na całej stronie
+
+Miłego oglądania :)
