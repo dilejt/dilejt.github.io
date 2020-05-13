@@ -23,13 +23,21 @@ Po wejściu w link https://dilejt.github.io pokaże się przygotowana witryna in
 
 W folderze js znajdują się pliki:
 - animations.js z:
-- - animowanym scrollowaniem strony po naciśnięciu odnośnika w nawigacji,
-- - obracaniem róży wiatrów,
-- - obsługą wskaźników pokazujących informacje w sposób animowany,
-- - rozmazywaniem tła sekcji informacyjnej po zjechaniu scrollem do miejsca tej sekcji
+ - animowanym scrollowaniem strony po naciśnięciu odnośnika w nawigacji,
+ - obracaniem róży wiatrów,
+ - obsługą wskaźników pokazujących informacje w sposób animowany,
+ - rozmazywaniem tła sekcji informacyjnej po zjechaniu scrollem do miejsca tej sekcji
 - forms.js z:
-- - walidacją danych formularza
+ - walidacją danych formularza
 - controllers.js z:
-- - obsługą galerii za pomocą angulara
+ - obsługą galerii za pomocą angulara
+ 
+W folderze css znajdują się pliki:
+- style.css z:
+ - modyfikacją wyglądu całej witryny
+
+W folderze json znajduje się plik:
+- galleries.json z:
+ - danymi do angularowej galerii
 
 Miłego oglądania :)
