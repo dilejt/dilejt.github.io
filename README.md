@@ -23,7 +23,7 @@ Po wejściu w link https://dilejt.github.io pokaże się przygotowana witryna in
 
 W folderze js znajdują się pliki:
 - animations.js z:
- - animowanym scrollowaniem strony po naciśnięciu odnośnika w nawigacji,
+  - animowanym scrollowaniem strony po naciśnięciu odnośnika w nawigacji,
  - obracaniem róży wiatrów,
  - obsługą wskaźników pokazujących informacje w sposób animowany,
  - rozmazywaniem tła sekcji informacyjnej po zjechaniu scrollem do miejsca tej sekcji
