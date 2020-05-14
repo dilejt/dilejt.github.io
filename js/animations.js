@@ -52,9 +52,9 @@ $( document ).ready(function() {
         }
     });
 
-    $('#compass').css('top',$(header).height()-parseInt($("#compass").css("height"),10)/2);
+    $('#compass').css('top',$('#header').height()-parseInt($("#compass").css("height"),10)/2);
     $(window).on('resize', function(){
-        $('#compass').css('top',$(header).height()-parseInt($("#compass").css("height"),10)/2);
+        $('#compass').css('top',$('#header').height()-parseInt($("#compass").css("height"),10)/2);
     });
     
     $('#compass').click(function() {
