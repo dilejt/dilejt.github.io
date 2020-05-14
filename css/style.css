@@ -129,6 +129,12 @@ header img{
         width: 20%;
     }
 }
+@media only screen and (min-width: 768px) and (min-height: 480px){
+    #compass{
+        width: 10%;
+    }
+}
+
 
 
 
