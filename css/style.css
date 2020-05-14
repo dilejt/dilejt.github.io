@@ -11,7 +11,7 @@ body{
     background-image: url("../img/section.jpg");
     background-position: center 100vh;
     background-repeat: no-repeat;
-    background-size: 100vw auto;
+    background-size: cover;
     width: auto;
     height: calc(2146px - 150px);
     padding-right: 0 !important; /* fix modal fade */
@@ -36,7 +36,12 @@ nav a{
 nav a:hover{
     color: #DA9C47 !important;
 }
-
+.navbar-brand img{
+    height: auto;
+    width: 20vw;
+    max-width: 180px;
+    min-width: 120px;
+}
 
 
 header{
@@ -50,7 +55,7 @@ header{
 }
 header img{
     position: absolute;
-    top: 350px;
+    top: 30vh;
     right: 2%;
     max-width: 85%;
     height: auto;
@@ -59,6 +64,16 @@ header img{
     header img{
         top: calc(50% - 9vh);
         max-width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) and (max-height: 530px){
+    header img{
+        display: none;
+    }
+}
+@media only screen and (max-height: 500px){
+    header img{
+        display: none;
     }
 }
 #headerText{
@@ -92,7 +107,7 @@ header img{
 }
 #compass{
     position: absolute;
-    top: calc(100vh - 135px);
+    /* top: calc(100vh - 135px); */
     left: 0; 
     right: 0; 
     margin-left: auto; 
