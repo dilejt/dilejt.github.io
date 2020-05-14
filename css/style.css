@@ -107,7 +107,6 @@ header img{
 }
 #compass{
     position: absolute;
-    /* top: calc(100vh - 135px); */
     left: 0; 
     right: 0; 
     margin-left: auto; 
@@ -117,7 +116,7 @@ header img{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    width: 10%;
+    width: 30%;
     height: 40%;
     max-width: 270px;
     max-height: 270px;
@@ -134,6 +133,12 @@ header img{
         width: 10%;
     }
 }
+@media only screen and (max-height: 480px){
+    #compass{
+        width: 10%;
+    }
+}
+
 
 
 
