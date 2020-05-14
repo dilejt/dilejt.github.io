@@ -52,6 +52,11 @@ $( document ).ready(function() {
         }
     });
 
+    $('#compass').css('top',window.innerHeight-parseInt($("#compass").css("height"),10)/2);
+    $(window).on('resize', function(){
+        $('#compass').css('top',window.innerHeight-parseInt($("#compass").css("height"),10)/2);
+    });
+    
     $('#compass').click(function() {
         $(this).animate({ borderSpacing: Math.random() * (400 - 10) + 10 }, {
             step: function(now,fx) {
