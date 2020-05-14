@@ -124,7 +124,7 @@ header img{
     cursor: pointer;
     z-index: 5;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) and (max-height: 480px){
     #compass{
         width: 20%;
     }
