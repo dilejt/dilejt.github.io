@@ -42,6 +42,7 @@ nav a:hover{
 header{
     background-image: url("../img/bghead.jpg");
     background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #B36F0A;
     width: auto;
