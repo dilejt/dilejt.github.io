@@ -39,4 +39,3 @@ W folderze json znajduje się plik:
 - galleries.json z:
   - danymi do angularowej galerii
 
-Miłego oglądania :)
